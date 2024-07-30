@@ -1,0 +1,25 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/task4
+    username: andrew
+    password: qwerty123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+server:
+  port: 8080
+
+jwt:
+  secret: 12312SJDFHJH2J3H1HER823H94723HKJASDASD123
+  expiration: 86400000
+  header: Authorization
+  prefix: Bearer
+
+
+
